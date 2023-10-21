@@ -10,3 +10,212 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.App {
+  text-align: center;
+  height: 120vh;
+}
+
+.seat-type-select,
+.num-seats-select {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.seat-type-select label,
+.num-seats-select label {
+  margin-right: 10px;
+}
+
+.seat-map {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  background-color: #444451;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.seat.available {
+  background-color: green;
+}
+
+.seat.unavailable {
+  background-color: red;
+}
+
+.Standard {
+  color: white;
+}
+
+.Premium {
+  color: black;
+}
+
+.con-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* .screen {
+  height: 70px;
+  width: 100%;
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.752);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  transform: rotateX(-45deg);
+  -webkit-transform: rotateX(-45deg);
+  -moz-transform: rotateX(-45deg);
+  -ms-transform: rotateX(-45deg);
+  -o-transform: rotateX(-45deg);
+} */
+
+/* .screen {
+  border: 5px solid black;
+  padding: 20px;
+  margin: 20px;
+} */
+
+/* Define the style for available seats */
+.bottom-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.screen {
+  background-color: rgba(0, 0, 0, 0.718);
+  width: 30vw;
+  height: 10vh;
+  border-color: black;
+  border-bottom-left-radius: 148px;
+  border-bottom-right-radius: 148px;
+  border-radius: 12px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 95%,
+    50% 100%,
+    0 95%
+  ); /* Clip path for sharp edges */
+}
+
+.seat.available {
+  background-color: green;
+  cursor: pointer;
+}
+
+/* Define the style for selected seats */
+.seat.selected {
+  background-color: red;
+  cursor: pointer;
+}
+
+/* Define the style for unavailable seats */
+.seat.unavailable {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Additional styling for the select dropdowns */
+.seat-type-select,
+.num-seats-select {
+  margin: 10px;
+}
+
+.head {
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+/* Style for the Proceed button */
+button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 12pxs;
+  margin-top: 24px;
+}
+
+button:hover {
+  background-color: red;
+}
+
+.top-con {
+  display: flex;
+  flex-direction: row;
+}
+
+.available-name-con {
+  height: 2vh;
+  width: 3vw;
+  background-color: green;
+}
+
+.selected-name-con {
+  height: 2vh;
+  width: 3vw;
+  background-color: red;
+}
+
+.unavailable-name-con {
+  height: 2vh;
+  width: 3vw;
+  background-color: gray;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.det-head {
+  font-size: 12px;
+  margin: 12px;
+}
+
+.req {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.round1 {
+  border-radius: 24px;
+  height: 18px;
+  width: 18px;
+  background-color: green;
+}
+
+.round2 {
+  border-radius: 24px;
+  height: 18px;
+  width: 18px;
+  background-color: red;
+}
+.round3 {
+  border-radius: 24px;
+  height: 18px;
+  width: 18px;
+  background-color: gray;
+}
